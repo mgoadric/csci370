@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{40F641F3-B5B3-1EA1-3870-5931D8843AE3}") = "ApplePicker2", "Assembly-CSharp.csproj", "{A2DF8A60-4A40-071B-90E8-F943C887DD6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2DF8A60-4A40-071B-90E8-F943C887DD6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2DF8A60-4A40-071B-90E8-F943C887DD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2DF8A60-4A40-071B-90E8-F943C887DD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2DF8A60-4A40-071B-90E8-F943C887DD6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
