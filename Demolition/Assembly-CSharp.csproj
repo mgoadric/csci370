@@ -46,10 +46,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CloudMaker.cs" />
      <Compile Include="Assets\FollowCam.cs" />
      <Compile Include="Assets\Moves.cs" />
      <Compile Include="Assets\ProjectileLine.cs" />
      <Compile Include="Assets\Slingshot.cs" />
+     <Compile Include="Assets\WallScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
