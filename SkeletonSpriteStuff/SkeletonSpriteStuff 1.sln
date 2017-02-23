@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{35287F93-4F13-B0EF-92FC-92E2F8229E34}") = "SkeletonSpriteStuff 1", "Assembly-CSharp.csproj", "{BB6AD178-573E-AB00-2310-44EF52FB9BF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB6AD178-573E-AB00-2310-44EF52FB9BF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB6AD178-573E-AB00-2310-44EF52FB9BF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB6AD178-573E-AB00-2310-44EF52FB9BF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB6AD178-573E-AB00-2310-44EF52FB9BF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
