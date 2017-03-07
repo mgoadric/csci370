@@ -13,10 +13,30 @@ public class SkeletonMover : MonoBehaviour {
 	void Start () {
 		animator = this.GetComponent<Animator>();
 		grounded = true;
+
+		StartCoroutine("MakeChoice");
 	}
-	
+
+	IEnumerator MakeChoice() {
+		while (true) {
+			animator.SetInteger("direction", Random.Range(0, 4));
+			yield return new WaitForSeconds(1.0f);
+		}
+	}
+
+	IEnumerator Fade() {
+		for (float f = 1f; f >= 0; f -= 0.05f) {
+			Color c = GetComponent<SpriteRenderer>().color;
+			c.a = f;
+			GetComponent<SpriteRenderer>().color = c;
+			yield return new WaitForSeconds(0.2f);
+		}
+	}
+
 	// Update is called once per frame
 	void Update () {
+
+		/*
 		var horizontal = Input.GetAxis("Horizontal");
 
 		if (horizontal > 0) {
@@ -24,10 +44,12 @@ public class SkeletonMover : MonoBehaviour {
 		} else if (horizontal < 0) {
 			animator.SetInteger("direction", 3);
 		} 
+		*/
 
 		if (Input.GetKeyDown("space") && grounded) {
 			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 250));
 			grounded = false;
+			StartCoroutine("Fade");
 		}
 	}
 
