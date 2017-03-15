@@ -31,6 +31,7 @@ public class SkeletonMover : MonoBehaviour {
 			GetComponent<SpriteRenderer>().color = c;
 			yield return new WaitForSeconds(0.2f);
 		}
+
 	}
 
 	// Update is called once per frame
