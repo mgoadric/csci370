@@ -1,0 +1,112 @@
+<linker>
+<assembly fullname="Assembly-CSharp">
+<type fullname="GameManager" preserve="all"/>
+<type fullname="GoalUpdates" preserve="all"/>
+<type fullname="LevelManager" preserve="all"/>
+<type fullname="LevelUpdates" preserve="all"/>
+<type fullname="MovesUpdates" preserve="all"/>
+<type fullname="PersonMover" preserve="all"/>
+<type fullname="TMPro.Examples.Benchmark01" preserve="all"/>
+<type fullname="TMPro.Examples.Benchmark01_UGUI" preserve="all"/>
+<type fullname="TMPro.Examples.Benchmark02" preserve="all"/>
+<type fullname="TMPro.Examples.Benchmark03" preserve="all"/>
+<type fullname="TMPro.Examples.Benchmark04" preserve="all"/>
+<type fullname="TMPro.Examples.CameraController" preserve="all"/>
+<type fullname="ChatController" preserve="all"/>
+<type fullname="TMPro.Examples.ObjectSpin" preserve="all"/>
+<type fullname="TMPro.Examples.ShaderPropAnimator" preserve="all"/>
+<type fullname="TMPro.Examples.SimpleScript" preserve="all"/>
+<type fullname="TMPro.Examples.SkewTextExample" preserve="all"/>
+<type fullname="TMPro.TMP_DigitValidator" preserve="all"/>
+<type fullname="TMPro.Examples.TMP_ExampleScript_01" preserve="all"/>
+<type fullname="TMPro.Examples.TMP_FrameRateCounter" preserve="all"/>
+<type fullname="TMPro.Examples.TMP_TextEventCheck" preserve="all"/>
+<type fullname="TMPro.TMP_TextEventHandler" preserve="all"/>
+<type fullname="TMPro.Examples.TMP_TextInfoDebugTool" preserve="all"/>
+<type fullname="TMPro.Examples.TMP_TextSelector_A" preserve="all"/>
+<type fullname="TMPro.Examples.TMP_TextSelector_B" preserve="all"/>
+<type fullname="TMPro.Examples.TMP_UiFrameRateCounter" preserve="all"/>
+<type fullname="TMPro.Examples.TMPro_InstructionOverlay" preserve="all"/>
+<type fullname="TMPro.Examples.TeleType" preserve="all"/>
+<type fullname="TMPro.Examples.TextConsoleSimulator" preserve="all"/>
+<type fullname="TMPro.Examples.TextMeshProFloatingText" preserve="all"/>
+<type fullname="TMPro.Examples.TextMeshSpawner" preserve="all"/>
+<type fullname="TMPro.Examples.VertexColorCycler" preserve="all"/>
+<type fullname="TMPro.Examples.VertexJitter" preserve="all"/>
+<type fullname="TMPro.Examples.VertexShakeA" preserve="all"/>
+<type fullname="TMPro.Examples.VertexShakeB" preserve="all"/>
+<type fullname="TMPro.Examples.VertexZoom" preserve="all"/>
+<type fullname="TMPro.Examples.WarpTextExample" preserve="all"/>
+</assembly>
+<assembly fullname="UnityEngine.UI">
+<type fullname="UnityEngine.EventSystems.EventSystem" preserve="all"/>
+<type fullname="UnityEngine.EventSystems.EventTrigger" preserve="all"/>
+<type fullname="UnityEngine.EventSystems.UIBehaviour" preserve="all"/>
+<type fullname="UnityEngine.EventSystems.BaseInput" preserve="all"/>
+<type fullname="UnityEngine.EventSystems.BaseInputModule" preserve="all"/>
+<type fullname="UnityEngine.EventSystems.PointerInputModule" preserve="all"/>
+<type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="all"/>
+<type fullname="UnityEngine.EventSystems.TouchInputModule" preserve="all"/>
+<type fullname="UnityEngine.EventSystems.BaseRaycaster" preserve="all"/>
+<type fullname="UnityEngine.EventSystems.Physics2DRaycaster" preserve="all"/>
+<type fullname="UnityEngine.EventSystems.PhysicsRaycaster" preserve="all"/>
+<type fullname="UnityEngine.UI.Button" preserve="all"/>
+<type fullname="UnityEngine.UI.Dropdown" preserve="all"/>
+<type fullname="UnityEngine.UI.Dropdown/DropdownItem" preserve="all"/>
+<type fullname="UnityEngine.UI.Graphic" preserve="all"/>
+<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="all"/>
+<type fullname="UnityEngine.UI.Image" preserve="all"/>
+<type fullname="UnityEngine.UI.InputField" preserve="all"/>
+<type fullname="UnityEngine.UI.Mask" preserve="all"/>
+<type fullname="UnityEngine.UI.MaskableGraphic" preserve="all"/>
+<type fullname="UnityEngine.UI.RawImage" preserve="all"/>
+<type fullname="UnityEngine.UI.RectMask2D" preserve="all"/>
+<type fullname="UnityEngine.UI.Scrollbar" preserve="all"/>
+<type fullname="UnityEngine.UI.ScrollRect" preserve="all"/>
+<type fullname="UnityEngine.UI.Selectable" preserve="all"/>
+<type fullname="UnityEngine.UI.Slider" preserve="all"/>
+<type fullname="UnityEngine.UI.Text" preserve="all"/>
+<type fullname="UnityEngine.UI.Toggle" preserve="all"/>
+<type fullname="UnityEngine.UI.ToggleGroup" preserve="all"/>
+<type fullname="UnityEngine.UI.AspectRatioFitter" preserve="all"/>
+<type fullname="UnityEngine.UI.CanvasScaler" preserve="all"/>
+<type fullname="UnityEngine.UI.ContentSizeFitter" preserve="all"/>
+<type fullname="UnityEngine.UI.GridLayoutGroup" preserve="all"/>
+<type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="all"/>
+<type fullname="UnityEngine.UI.HorizontalOrVerticalLayoutGroup" preserve="all"/>
+<type fullname="UnityEngine.UI.LayoutElement" preserve="all"/>
+<type fullname="UnityEngine.UI.LayoutGroup" preserve="all"/>
+<type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all"/>
+<type fullname="UnityEngine.UI.BaseMeshEffect" preserve="all"/>
+<type fullname="UnityEngine.UI.Outline" preserve="all"/>
+<type fullname="UnityEngine.UI.PositionAsUV1" preserve="all"/>
+<type fullname="UnityEngine.UI.Shadow" preserve="all"/>
+</assembly>
+<assembly fullname="UnityEngine.Analytics">
+<type fullname="UnityEngine.Analytics.AnalyticsTracker" preserve="all"/>
+</assembly>
+<assembly fullname="TextMeshPro">
+<type fullname="TMPro.InlineGraphic" preserve="all"/>
+<type fullname="TMPro.InlineGraphicManager" preserve="all"/>
+<type fullname="TMPro.TMP_Asset" preserve="all"/>
+<type fullname="TMPro.TMP_ColorGradient" preserve="all"/>
+<type fullname="TMPro.TMP_Dropdown" preserve="all"/>
+<type fullname="TMPro.TMP_Dropdown/DropdownItem" preserve="all"/>
+<type fullname="TMPro.TMP_FontAsset" preserve="all"/>
+<type fullname="TMPro.TMP_InputField" preserve="all"/>
+<type fullname="TMPro.TMP_InputValidator" preserve="all"/>
+<type fullname="TMPro.TMP_PhoneNumberValidator" preserve="all"/>
+<type fullname="TMPro.TMP_ScrollbarEventHandler" preserve="all"/>
+<type fullname="TMPro.TMP_SelectionCaret" preserve="all"/>
+<type fullname="TMPro.TMP_Settings" preserve="all"/>
+<type fullname="TMPro.TMP_SpriteAnimator" preserve="all"/>
+<type fullname="TMPro.TMP_SpriteAsset" preserve="all"/>
+<type fullname="TMPro.TMP_StyleSheet" preserve="all"/>
+<type fullname="TMPro.TMP_SubMesh" preserve="all"/>
+<type fullname="TMPro.TMP_SubMeshUI" preserve="all"/>
+<type fullname="TMPro.TMP_Text" preserve="all"/>
+<type fullname="TMPro.TextMeshPro" preserve="all"/>
+<type fullname="TMPro.TextMeshProUGUI" preserve="all"/>
+<type fullname="TMPro.TextContainer" preserve="all"/>
+</assembly>
+</linker>
