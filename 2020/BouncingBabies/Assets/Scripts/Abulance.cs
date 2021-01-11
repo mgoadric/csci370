@@ -6,9 +6,6 @@ using TMPro;
 public class Abulance : MonoBehaviour
 {
 
-    int score = 0;
-    public TextMeshProUGUI scoreText;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -25,8 +22,7 @@ public class Abulance : MonoBehaviour
     {
         Debug.Log("OnCollisionEnter2D");
         Destroy(col.gameObject);
-        score++;
-        scoreText.text = "Score : " + score;
 
+        GameManager.Instance.IncScore(1);
     }
 }
