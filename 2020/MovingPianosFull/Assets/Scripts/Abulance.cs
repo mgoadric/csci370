@@ -6,6 +6,8 @@ using TMPro;
 public class Abulance : MonoBehaviour
 {
 
+    public GameObject notes;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,8 @@ public class Abulance : MonoBehaviour
     {
         Debug.Log("OnCollisionEnter2D");
         Destroy(col.gameObject);
+
+        Instantiate(notes);
 
         GameManager.Instance.IncScore(1);
     }
