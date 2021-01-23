@@ -10,13 +10,17 @@ public class Building : MonoBehaviour
     void Start()
     {
         //InvokeRepeating("DropPerson", 2.0f, 2.5f);
-        StartCoroutine("DropPerson2");
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    public void StartThrowing()
+    {
+        StartCoroutine("DropPerson2");
     }
 
     void DropPerson() {

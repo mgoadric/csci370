@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 
     int score = 0;
     public TextMeshProUGUI scoreText;
+    public GameObject building;
+    public GameObject startButton;
 
     void Awake()
     {
@@ -40,6 +42,14 @@ public class GameManager : MonoBehaviour
     {
         score += ds;
         scoreText.text = "Score : " + score;
+    }
+
+    public void StartButton()
+    {
+        Debug.Log("Clicked!");
+        Building b = building.GetComponent<Building>();
+        b.StartThrowing();
+        startButton.SetActive(false);
     }
 
 }
