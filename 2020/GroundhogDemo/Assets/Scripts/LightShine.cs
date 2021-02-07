@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shadow : MonoBehaviour
+public class LightShine : MonoBehaviour
 {
+
+    public int power;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,15 +19,12 @@ public class Shadow : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (GameManager.Instance.power <= 0)
-            {
-                Debug.Log("Hit a Shadow!");
-                GameManager.Instance.GameOver();
-            }
+            GameManager.Instance.AddPower(power);
+            Destroy(gameObject);
         }
     }
 }

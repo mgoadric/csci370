@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     private bool sliding = false;
 
+    public GameObject glowSprite;
+
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
@@ -24,6 +26,13 @@ public class PlayerMovement : MonoBehaviour
         // Gives a value between -1 and 1
         horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
         vertical = Input.GetAxisRaw("Vertical"); // -1 is down
+        if (GameManager.Instance.power > 0)
+        {
+            glowSprite.SetActive(true);
+        } else
+        {
+            glowSprite.SetActive(false);
+        }
     }
 
     void FixedUpdate()
