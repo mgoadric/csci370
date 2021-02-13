@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    // Derived from https://stuartspixelgames.com/2018/06/24/simple-2d-top-down-movement-unity-c/
     Rigidbody2D body;
 
     float horizontal;
     float vertical;
     float moveLimiter = 0.7f;
 
-    public float runSpeed = .01f;
+    public float runSpeed = 5f;
 
     private bool sliding = false;
 
@@ -49,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
             body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
         }
     }
+
 
     public void Slide(bool sliding)
     {

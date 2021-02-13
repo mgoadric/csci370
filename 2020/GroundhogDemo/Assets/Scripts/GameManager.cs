@@ -90,8 +90,9 @@ public class GameManager : MonoBehaviour
     {
         while (power > 0)
         {
+         
             power -= 0.01f;
-            yield return null;
+            yield return new WaitForFixedUpdate();
         }
         power = 0;
     }
@@ -102,7 +103,7 @@ public class GameManager : MonoBehaviour
         foreach (char c in text.ToCharArray())
         {
             dText.text += c;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.02f);
         }
     }
 

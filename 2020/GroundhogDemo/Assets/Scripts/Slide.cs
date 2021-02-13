@@ -17,6 +17,7 @@ public class Slide : MonoBehaviour
         
     }
 
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("In Slide!");
@@ -36,5 +37,6 @@ public class Slide : MonoBehaviour
             player.Slide(false);
         }
     }
+    
 
 }
