@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameManager : MonoBehaviour
@@ -13,6 +14,9 @@ public class GameManager : MonoBehaviour
     public GameObject dialogText;
     public GameObject startButton;
     public GameObject backgroundImage;
+
+    public GameObject canvas;
+    public GameObject events;
 
     private Coroutine dialogCo;
 
@@ -34,6 +38,9 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(canvas);
+            DontDestroyOnLoad(events);
+
         }
         else
         {
@@ -67,7 +74,8 @@ public class GameManager : MonoBehaviour
     public void StartButton()
     {
         startButton.SetActive(false);
-        StartCoroutine(ColorLerp(new Color(1, 1, 1, 0), 2));
+        StartCoroutine(LoadYourAsyncScene("GroundhogWorld"));
+
     }
 
     public void GameOver()
@@ -91,6 +99,25 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
         sprite.color = endValue;
+    }
+
+    IEnumerator LoadYourAsyncScene(string scene)
+    {
+        // The Application loads the Scene in the background as the current Scene runs.
+        // This is particularly good for creating loading screens.
+        // You could also load the Scene by using sceneBuildIndex. In this case Scene2 has
+        // a sceneBuildIndex of 1 as shown in Build Settings.
+
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+
+        StartCoroutine(ColorLerp(new Color(1, 1, 1, 0), 2));
+
     }
 
 }
