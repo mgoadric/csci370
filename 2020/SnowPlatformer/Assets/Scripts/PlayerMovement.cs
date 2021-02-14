@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     // Derived from https://stuartspixelgames.com/2018/06/24/simple-2d-top-down-movement-unity-c/
     Rigidbody2D body;
     Animator animator;
+    SpriteRenderer sprite;
 
     float horizontal;
 
@@ -15,13 +16,11 @@ public class PlayerMovement : MonoBehaviour
 
     public bool jumping = false;
 
-    Quaternion left = Quaternion.Euler(new Vector3(0, 0, 0));
-    Quaternion right = Quaternion.Euler(new Vector3(0, -180, 0));
-
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -39,13 +38,13 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (horizontal < 0)
-        { 
-            transform.rotation = left;
+        {
+            sprite.flipX = false;
 
         }
         else
         {
-            transform.rotation = right;
+            sprite.flipX = true;
         }
     }
 
