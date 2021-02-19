@@ -44,3 +44,6 @@ TagManager:
   - name: Bunny
     uniqueID: 981963913
     locked: 0
+  - name: Bun2
+    uniqueID: 3541311421
+    locked: 0
