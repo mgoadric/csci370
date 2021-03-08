@@ -13,11 +13,10 @@ public class FollowSteer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		body = GetComponent<Rigidbody2D>();
-		
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		Vector2 desired = (target.transform.position - transform.position).normalized;
 		body.AddForce(desired * speed - body.velocity);
 

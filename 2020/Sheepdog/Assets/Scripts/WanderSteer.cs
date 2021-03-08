@@ -5,6 +5,7 @@ using UnityEngine;
 public class WanderSteer : MonoBehaviour
 {
 	public float speed;
+	public float angle;
 
 	private Rigidbody2D body;
 
@@ -12,13 +13,12 @@ public class WanderSteer : MonoBehaviour
 	void Start()
 	{
 		body = GetComponent<Rigidbody2D>();
-
 	}
 
 	// Update is called once per frame
-	void Update()
+	void FixedUpdate()
 	{
 		body.AddForce(transform.up * speed);
-		transform.Rotate(Vector3.back * (Random.value * 2 - 1));
+		transform.Rotate(Vector3.back * (Random.value * 2 * angle - angle));
 	}
 }

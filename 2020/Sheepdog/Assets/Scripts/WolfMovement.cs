@@ -6,6 +6,7 @@ public class WolfMovement : MonoBehaviour {
 
 	public GameObject target;
 	public float runSpeed;
+	public float rotateSpeed;
 
 	private float horizontal;
 	private float vertical;
@@ -26,7 +27,7 @@ public class WolfMovement : MonoBehaviour {
 	private void FixedUpdate()
 	{
 		body.AddForce(transform.up * vertical * runSpeed);
-		transform.Rotate(Vector3.back * horizontal);
+		transform.Rotate(Vector3.back * horizontal * rotateSpeed);
 	}
 
 	void OnCollisionEnter2D(Collision2D coll) {

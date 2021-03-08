@@ -18,7 +18,7 @@ public class AvoidSteer : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
 		Vector2 desired = target.transform.position - transform.position;
 
@@ -35,7 +35,7 @@ public class AvoidSteer : MonoBehaviour {
 		if (!tagged && coll.gameObject == target) {
 			print("WOLF!");
 			dog.GetComponent<FollowSteer>().IncreaseSpeed();
-			minDist += 1;
+			minDist += 2;
 			tagged = true;
 			GetComponent<AudioSource>().Play ();
 		}

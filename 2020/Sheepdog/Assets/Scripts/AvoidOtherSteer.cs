@@ -17,7 +17,7 @@ public class AvoidOtherSteer : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
 		Collider2D[] colls = Physics2D.OverlapCircleAll(transform.position, minDist);
 
