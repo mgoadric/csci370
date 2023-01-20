@@ -10,7 +10,8 @@ public class Building : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("DropPiano", 2.0f, 2.5f);
+        //InvokeRepeating("DropPiano", 2.0f, 2.5f);
+        StartCoroutine("DropPiano2");
     }
 
     // Update is called once per frame
@@ -21,5 +22,12 @@ public class Building : MonoBehaviour
 
     void DropPiano() {
         Instantiate(piano);
+    }
+
+    IEnumerator DropPiano2() {
+        for (;;) {
+            Instantiate(piano);
+            yield return new WaitForSeconds(Random.Range(1.5f, 3f));
+        }
     }
 }
