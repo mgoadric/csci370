@@ -18,9 +18,16 @@ public class Piano : MonoBehaviour
     void Update()
     {
         if (transform.position.y < -5 && !crashed) {
-            audio.Play();
-            print("Crash!!!");
+            StartCoroutine("Crash");
             crashed = true;
         }
+    }
+
+    IEnumerator Crash()
+    {
+        audio.Play();
+        Debug.Log("Playing Crash Now?");
+        yield return new WaitForSeconds(audio.clip.length);
+        Destroy(gameObject);
     }
 }
