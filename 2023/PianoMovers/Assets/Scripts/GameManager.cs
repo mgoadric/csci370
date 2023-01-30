@@ -11,6 +11,10 @@ public class GameManager : MonoBehaviour
     private int score;
 
     public TextMeshProUGUI scoreText;
+    public GameObject banner;
+    public GameObject button;
+
+    public GameObject building;
 
     void Awake() {
         if (Instance == null) {
@@ -25,6 +29,12 @@ public class GameManager : MonoBehaviour
     public void IncScore(int ds) {
         score += ds;
         scoreText.text = "Score : " + score;
+    }
+
+    public void StartGame() {
+        building.GetComponent<Building>().DropPianos();
+        banner.SetActive(false);
+        button.SetActive(false);
     }
 
     // Start is called before the first frame update

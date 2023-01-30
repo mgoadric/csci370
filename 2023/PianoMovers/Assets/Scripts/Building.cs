@@ -11,13 +11,18 @@ public class Building : MonoBehaviour
     void Start()
     {
         //InvokeRepeating("DropPiano", 2.0f, 2.5f);
-        StartCoroutine("DropPiano2");
+        //StartCoroutine("DropPiano2");
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+
+    public void DropPianos() {
+        StartCoroutine("DropPiano2");
     }
 
     void DropPiano() {
