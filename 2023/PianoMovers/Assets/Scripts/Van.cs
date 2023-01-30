@@ -18,8 +18,10 @@ public class Van : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col) {
         print("Entering Collision with van");
-        Destroy(col.gameObject);
+        if (col.gameObject.tag == "Piano") {
+            Destroy(col.gameObject);
 
-        GameManager.Instance.IncScore(1);
+            GameManager.Instance.IncScore(1);
+        }
     }
 }
