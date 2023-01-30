@@ -20,6 +20,13 @@ public class Piano : MonoBehaviour
         if (transform.position.y < -5 && !crashed) {
             StartCoroutine("Crash");
             crashed = true;
+            GameObject[] others = GameObject.FindGameObjectsWithTag("Piano");
+            foreach(GameObject piano in others) {
+                if (piano != this.gameObject) {
+                    GameObject.Destroy(piano);
+                }
+            }
+            GameManager.Instance.StopGame();
         }
     }
 

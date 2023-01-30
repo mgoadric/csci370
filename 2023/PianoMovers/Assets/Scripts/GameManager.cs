@@ -32,9 +32,18 @@ public class GameManager : MonoBehaviour
     }
 
     public void StartGame() {
+        score = 0;
+        scoreText.text = "Score : " + score;
+
         building.GetComponent<Building>().DropPianos();
         banner.SetActive(false);
         button.SetActive(false);
+    }
+
+    public void StopGame() {
+        building.GetComponent<Building>().StopDropping();
+        banner.SetActive(true);
+        button.SetActive(true);
     }
 
     // Start is called before the first frame update

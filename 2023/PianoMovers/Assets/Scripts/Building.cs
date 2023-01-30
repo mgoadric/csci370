@@ -25,6 +25,10 @@ public class Building : MonoBehaviour
         StartCoroutine("DropPiano2");
     }
 
+    public void StopDropping() {
+        StopCoroutine("DropPiano2");
+    }
+
     void DropPiano() {
         Instantiate(piano);
     }
