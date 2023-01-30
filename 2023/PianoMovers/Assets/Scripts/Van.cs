@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Van : MonoBehaviour
 {
+
+    public GameObject notes;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +23,7 @@ public class Van : MonoBehaviour
         print("Entering Collision with van");
         if (col.gameObject.tag == "Piano") {
             Destroy(col.gameObject);
-
+            Instantiate(notes);
             GameManager.Instance.IncScore(1);
         }
     }
