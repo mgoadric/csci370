@@ -9,6 +9,8 @@ public class Digger : MonoBehaviour
     public float horizontal;
     public float vertical;
 
+    private float moveLimiter;
+
     public float runSpeed = 5f;
 
     // Start is called before the first frame update
@@ -25,6 +27,11 @@ public class Digger : MonoBehaviour
     }
 
     void FixedUpdate() {
+        if (horizontal != 0 && vertical != 0) {
+            horizontal *= moveLimiter;
+            vertical *= moveLimiter;
+        }
+
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
 }
