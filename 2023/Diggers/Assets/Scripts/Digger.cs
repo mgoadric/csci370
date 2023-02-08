@@ -9,7 +9,7 @@ public class Digger : MonoBehaviour
     public float horizontal;
     public float vertical;
 
-    private float moveLimiter;
+    private float moveLimiter = 0.7f;
 
     public float runSpeed = 5f;
 

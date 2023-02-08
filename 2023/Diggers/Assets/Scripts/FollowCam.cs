@@ -8,6 +8,8 @@ public class FollowCam : MonoBehaviour
     public GameObject sprite;
     public float boundaryPercent;
 
+    public float easing;
+
     private float lBound;
     private float rBound;
     private float uBound;
@@ -39,6 +41,8 @@ public class FollowCam : MonoBehaviour
         } else if (spriteLoc.y > uBound) {
             pos.y += spriteLoc.y - uBound;
         }
+
+        pos = Vector3.Lerp(transform.position, pos, easing);
 
         transform.position = pos;
     }
