@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     public void DialogShow(string text) {
         dialogBox.SetActive(true);
+        StopAllCoroutines();
         StartCoroutine(TypeText(text));
     }
 
