@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/DiggerWorld.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: ca274b39f37e14049a8265025f903740
+  - enabled: 1
+    path: Assets/Scenes/InsideRoom.unity
+    guid: 8c4037be7da1944d194fd15bbe5ff43e
   m_configObjects: {}
