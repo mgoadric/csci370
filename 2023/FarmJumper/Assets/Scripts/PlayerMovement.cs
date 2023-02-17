@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
 
+    private bool jumping = false;
+
     public float runSpeed = 5f;
 
     // Start is called before the first frame update
@@ -33,7 +35,8 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space)) {
             print("Space!");
-            body.AddForce(new Vector2(0, runSpeed * 100));
+            body.AddForce(new Vector2(0, runSpeed * 20));
+            jumping = true;
         }
     }
 
@@ -41,5 +44,9 @@ public class PlayerMovement : MonoBehaviour
 
         body.velocity = new Vector2(horizontal * runSpeed, body.velocity.y);
 
+    }
+
+    void OnCollisionEnter2D(Collision2D collision2D) {
+        jumping = false;
     }
 }
