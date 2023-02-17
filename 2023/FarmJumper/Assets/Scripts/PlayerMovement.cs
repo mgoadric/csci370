@@ -35,11 +35,6 @@ public class PlayerMovement : MonoBehaviour
         } else {
             spriteRenderer.flipX = false;
         }
-    }
-
-    void FixedUpdate() {
-
-        body.velocity = new Vector2(horizontal * runSpeed, body.velocity.y);
         if (Input.GetKeyDown(KeyCode.Space) && !jumping) {
             print("space");
             body.AddForce(new Vector2(0, 400));
@@ -47,9 +42,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void FixedUpdate() {
+
+        body.velocity = new Vector2(horizontal * runSpeed, body.velocity.y);
+    }
+
     void OnCollisionEnter2D(Collision2D collision2D) {
-        if (jumping) {
-            jumping = false;
-        }
+        jumping = false;
     }
 }
