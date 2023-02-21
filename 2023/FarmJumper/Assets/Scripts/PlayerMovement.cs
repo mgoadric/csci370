@@ -33,9 +33,9 @@ public class PlayerMovement : MonoBehaviour
         } else {
             spriteRenderer.flipX = false;
         }
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space) && !jumping) {
             print("Space!");
-            body.AddForce(new Vector2(0, runSpeed * 20));
+            body.AddForce(new Vector2(0, 400));
             jumping = true;
         }
     }
