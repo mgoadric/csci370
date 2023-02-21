@@ -34,7 +34,8 @@ public class Parallax : MonoBehaviour
 
     private void ScrollLeft()
     {
-        layers[rightIndex].position = Vector3.right * (layers[leftIndex].position.x - backgroundSize);
+        print("Scrolling Left");
+        layers[rightIndex].position -= 3 * Vector3.right * backgroundSize;
         leftIndex = rightIndex;
         rightIndex--;
         if (rightIndex < 0)
@@ -45,7 +46,8 @@ public class Parallax : MonoBehaviour
 
     private void ScrollRight()
     {
-        layers[leftIndex].position = Vector3.right * (layers[rightIndex].position.x + backgroundSize);
+        print("Scrolling Right");
+        layers[leftIndex].position += 3 * Vector3.right * backgroundSize;
         rightIndex = leftIndex;
         leftIndex++;
         if (leftIndex == layers.Length)
