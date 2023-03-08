@@ -5,12 +5,12 @@ using UnityEngine.AI;
 
 public class Finder : MonoBehaviour
 {
-       public Transform goal;
-       
-       void Start () {
-          NavMeshAgent agent = GetComponent<NavMeshAgent>();
-          agent.destination = goal.position; 
-       }
+    public Transform goal;
+    
+    void Start () {
+        NavMeshAgent agent = GetComponent<NavMeshAgent>();
+        agent.destination = goal.position; 
+    }
 
     // Update is called once per frame
     void Update()
