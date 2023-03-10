@@ -60,7 +60,7 @@ public class Finder : MonoBehaviour
             // make the jump
             rigidbody.isKinematic = false;
             rigidbody.useGravity = true;
-            rigidbody.AddRelativeForce(currentVelocity, ForceMode.Impulse);
+            rigidbody.AddRelativeForce(-currentVelocity, ForceMode.Impulse);
             rigidbody.AddRelativeForce(new Vector3(0, 5f, 0), ForceMode.Impulse);
             animator.SetTrigger("jump");
         }
