@@ -14,6 +14,6 @@ public class TarpMovement : MonoBehaviour
     {
         Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector2(pos.x, transform.position.y);
-        Debug.Log("" + pos.x);
+        //Debug.Log("" + pos.x);
     }
 }
