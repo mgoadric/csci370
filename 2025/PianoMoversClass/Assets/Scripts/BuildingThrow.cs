@@ -22,7 +22,6 @@ public class BuildingThrow : MonoBehaviour
     IEnumerator DropPiano2() {
         for(;;) {
             GameObject go = Instantiate(piano);
-            GameManager.Instance.IncScore(1);
             yield return new WaitForSeconds(Random.Range(2f, 4f));
         }
     }
