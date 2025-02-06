@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class CatchPiano : MonoBehaviour
 {
+
+    public GameObject noteParticles;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,5 +22,7 @@ public class CatchPiano : MonoBehaviour
         Destroy(col.gameObject);
 
         GameManager.Instance.IncScore(1);
+        GameObject go = Instantiate(noteParticles);
+        go.transform.parent = transform;
     }
 }

@@ -4,6 +4,7 @@ public class Piano : MonoBehaviour
 {
 
     private Rigidbody2D rb2D;
+    private bool crashed = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,6 +16,11 @@ public class Piano : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!crashed && transform.position.y < -4) {
+            crashed = true;
+            AudioSource audioSource = GetComponent<AudioSource>();
+            audioSource.Play();
+            Destroy(gameObject, 5);
+        }
     }
 }
