@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Car1
   m_EditorClassIdentifier: 
   dialogue:
-  - Get out of my way!!!
+  - Get out of my way!!! Get out of my way!!! Get out of my way!!! Get out of my
+    way!!!  Get out of my way!!! Get out of my way!!! Get out of my way!!!
   - BEEEEP!
   - BEEEEEEP!!!
