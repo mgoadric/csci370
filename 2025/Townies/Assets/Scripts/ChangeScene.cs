@@ -21,7 +21,7 @@ public class ChangeScene : MonoBehaviour
         
     }
 
-    public void GoFade()
+    public void GoFade(string scene)
     {
         Initiate.Fade(scene, loadToColor, multiplier);
     }
