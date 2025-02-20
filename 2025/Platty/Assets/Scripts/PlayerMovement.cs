@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
 
 		// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
 		// This can be done using layers instead but Sample Assets will not overwrite your project settings.
-		Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.1f);
+		Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.2f);
 		for (int i = 0; i < colliders.Length; i++)
 		{
 			if (colliders[i].gameObject != gameObject)
@@ -75,8 +75,4 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("jump", false);
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        animator.SetBool("jump", false);
-    }
 }
