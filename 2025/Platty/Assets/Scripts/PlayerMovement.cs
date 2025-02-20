@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
     float horizontal;
-    float vertical;
 
     public float runSpeed = 5f;
     private bool m_Grounded;
