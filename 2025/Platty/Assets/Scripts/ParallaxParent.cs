@@ -7,6 +7,8 @@ public class ParallaxParent : MonoBehaviour
 
     public Sprite[] backgrounds;
 
+    public float backgroundSize;
+
     void Awake()
     {
         for (int i = 0; i < backgrounds.Length; i++) {
@@ -15,7 +17,7 @@ public class ParallaxParent : MonoBehaviour
             go.transform.localPosition = new Vector3(0, 0, 0);
             ParallaxScroll ps = go.AddComponent<ParallaxScroll>();
             ps.sprite = backgrounds[i];
-            ps.backgroundSize = 19.2f;
+            ps.backgroundSize = backgroundSize;
             ps.sortOrder = backgrounds.Length - i;
             ps.parallaxSpeed = (1.0f + i) / backgrounds.Length;
             ps.Setup();

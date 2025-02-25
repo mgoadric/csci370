@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 981017620}
   - component: {fileID: 981017619}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Parallax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -397,6 +397,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 923b4a9c8e4404bf0a3a60faa7972457, type: 3}
   - {fileID: 21300000, guid: 26cad3db1f07f44308f91cf84d727c96, type: 3}
   - {fileID: 21300000, guid: 504c91d92c2974e22825bff90ff41492, type: 3}
+  backgroundSize: 19.2
 --- !u!4 &981017620
 Transform:
   m_ObjectHideFlags: 0
