@@ -34,6 +34,7 @@ public class ParallaxScroll : MonoBehaviour
             SpriteRenderer spriteRenderer = go.AddComponent<SpriteRenderer>();
             spriteRenderer.sprite = sprite;
             spriteRenderer.sortingOrder = sortOrder;
+            spriteRenderer.sortingLayerName = "Background";
             go.name = i.ToString();
             layers[i] = go.transform;
         }
