@@ -21,11 +21,12 @@ public class ParallaxScroll : MonoBehaviour
 
     private float lastCameraX;
 
-    void Awake()
+    public void Setup()
     {
         cameraTransform = Camera.main.transform;
         lastCameraX = cameraTransform.position.x;
         layers = new Transform[3];
+
         for (int i = 0; i < 3; i++)
         {
             GameObject go = new GameObject(); 
