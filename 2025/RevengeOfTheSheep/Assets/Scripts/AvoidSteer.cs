@@ -20,13 +20,15 @@ public class AvoidSteer : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
-		Vector2 desired = target.transform.position - transform.position;
+		if (target) {
+			Vector2 desired = target.transform.position - transform.position;
 
-		if (desired.magnitude < minDist) {
-			print("avoiding wolf");
-			float actual = desired.magnitude - minDist;
-			body.AddForce(desired.normalized *
-				actual * speed - body.linearVelocity);
+			if (desired.magnitude < minDist) {
+				print("avoiding wolf");
+				float actual = desired.magnitude - minDist;
+				body.AddForce(desired.normalized *
+					actual * speed - body.linearVelocity);
+			}
 		}
 
 	}
